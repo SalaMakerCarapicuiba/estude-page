@@ -64,9 +64,8 @@ p {
 .container-buttons {
   margin-top: 2.3rem;
   width: 100%;
-  justify-content: space-between;
 
-  text-align: center;
+  text-align: start;
   gap: 16px;
 }
 
