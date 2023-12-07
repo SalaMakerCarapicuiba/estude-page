@@ -61,6 +61,42 @@ p {
   margin: 0 5rem 2rem 0;
 }
 
+.container-buttons {
+  margin-top: 2.3rem;
+  width: 100%;
+  justify-content: space-between;
+
+  text-align: center;
+  gap: 16px;
+}
+
+.container-buttons > span {
+  margin: 0 1rem;
+}
+
+.play-btn {
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-align: center;
+  padding: 12px 36px;
+
+  text-decoration: none;
+
+  color: var(--white-color);
+  background-color: var(--blue-color);
+
+  border: none;
+  border-radius: 24px;
+
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.play-btn:hover {
+  background-color: var(--blue-hover-color);
+}
+
 .sub-container {
   font-size: 1.6rem;
   margin-bottom: 2.2rem;
@@ -173,11 +209,18 @@ h3 {
   .sub-container {
     font-size: 1.4rem;
   }
+
+  .container-buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   .text-container {
     display: flex;
     flex-direction: column;
 
-    margin: 0 1rem 2rem 0;
+    margin: 0 0 2rem 0;
   }
   figure > img {
     width: 100%;
@@ -208,6 +251,41 @@ h3 {
 
     margin: 0 1rem 2rem 0;
   }
+
+  .container-buttons {
+    display: block;
+    margin-top: 2.3rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .container-buttons > span {
+    margin: 0 1rem;
+  }
+
+  .play-btn {
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: 12px 36px;
+
+    text-decoration: none;
+
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    margin-top: 1.5rem;
+
+    border: none;
+    border-radius: 24px;
+
+    cursor: pointer;
+    transition: all ease 0.2s;
+  }
+
+  .play-btn:hover {
+    background-color: var(--blue-hover-color);
+  }
+
   figure > img {
     width: 100%;
     border-radius: 12px;
@@ -229,6 +307,13 @@ h3 {
 
     margin: 0 1.2rem 2rem 0;
   }
+
+  .container-buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   figure > img {
     width: 425px;
     border-radius: 12px;
