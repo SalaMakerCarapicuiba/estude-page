@@ -37,27 +37,89 @@
 <body>
 
     <section class="about-game">
-        <h1 class="title">ESTUDE na Fatec Carapicuíba!</h1>
+        <div class="header">
+            <figure id="banner" title="Banner da Fatec Carapicuíba">
+                <img src="./assets/banner-fatec.png"
+                    alt="Banner da Fatec Carapicuíba com QRcode, logo da Fatec e Centro Paula Souza.">
+            </figure>
+            <nav class="menu menu-mobile">
+                <h3 id="mobile-text">Menu</h3>
+                <ul class="u-mobile closed">
+                    <a href="https://www.fateccarapicuiba.edu.br/">
+                        <li class="item">Home</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/instituicao/">
+                        <li class="item">Instituição</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/">
+                        <li class="item">Cursos</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/">
+                        <li class="item">Discentes</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/">
+                        <li class="item">Docentes</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/concursos-publicos">
+                        <li class="item">Concursos Públicos</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/">
+                        <li class="item">Revistas</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/trabalhos-academicos/">
+                        <li class="item">Trabalhos Acadêmicos</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/contato/form_faleconosco.php">
+                        <li class="item">Fale Conosco</li>
+                    </a>
+                    <a href="https://www.fateccarapicuiba.edu.br/estude/">
+                        <li class="item" id="estude">Estude Conosco</li>
+                    </a></a>
+                </ul>
+            </nav>
+
+            <h1 class="title">ESTUDE na Fatec Carapicuíba!</h1>
+        </div>
         <div class="about-container">
             <div class="text-container">
-                <h2 class="sub-container">JOGO Portal do Triunfo </h2>
-                <p class="description-container">Descubra através de um jogo o curso que vai fazer a diferença na
-                    sua
-                    carreira:
-                    jogue <a href="https://sijoga.itch.io/portaldotriunfo" target="_blank">Portal do Triunfo –
+                <a href="https://salamaker.itch.io/portaldotriunfo" target="_blank">
+                    <figure id="game">
+                        <img src="./assets/logomarca_portal-triunfo.png" title="Capa do jogo: Portal do Triunfo"
+                            alt="Logo do jogo: Portal do Triunfo.">
+                    </figure>
+                </a>
+                <h2 class="sub-container">JOGO Portal do Triunfo</h2>
+                <p class="description-container">
+                    jogue <a href="https://salamaker.itch.io/portaldotriunfo" target="_blank">Portal do Triunfo –
                         Sucesso em Curso</a>, o game da Fatec Carapicuíba! </p>
                 <div class="container-buttons">
-                    <a href="https://sijoga.itch.io/portaldotriunfo" target="_blank" class="play-btn">
+                    <a href="https://salamaker.itch.io/portaldotriunfo" target="_blank" class="play-btn">
                         Baixar jogo
                     </a>
                 </div>
             </div>
-            <a href="https://sijoga.itch.io/portaldotriunfo" target="_blank">
-                <figure>
-                    <img src="./assets/logomarca_portal-triunfo.png" title="Capa do jogo: Portal do Triunfo"
-                        alt="Logo do jogo: Portal do Triunfo.">
-                </figure>
-            </a>
+            <div class="text-container">
+                <a href="https://vestibular.fatec.sp.gov.br/" target="_blank">
+                    <figure id="game">
+                        <img src="./assets/vestibular.png" title="Capa do jogo: Portal do Triunfo"
+                            alt="Logo do jogo: Portal do Triunfo.">
+                    </figure>
+                </a>
+                <h2 class="sub-container">Vestibular Fatec 2025</h2>
+                <p class="description-container">As inscrições para o Vestibular da Fatec 2025 já estão abertas:
+                    <a href="https://vestibular.fatec.sp.gov.br/" target="_blank">Vestibular Fatec 2025</a>.
+                    O curso
+                    que
+                    vai fazer a diferença na
+                    sua
+                    carreira!
+                </p>
+                <div class="container-buttons">
+                    <a href="https://vestibular.fatec.sp.gov.br/" target="_blank" class="play-btn">
+                        Saiba mais
+                    </a>
+                </div>
+            </div>
         </div>
 
         <hr>
@@ -191,9 +253,19 @@
             <button id="goToTopBtn" title="Voltar ao topo" onclick="goToTop()"><i
                     class="fa-solid fa-angle-up"></i></button>
         </section>
-        <footer class="footer">
-            <img src="./assets/fatec-logo.png" title="Fatec Carapicuíba" alt="Logo da Fatec Carapicuíba.">
+        <footer>
         </footer>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
 
 </body>
 

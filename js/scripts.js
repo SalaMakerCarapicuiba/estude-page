@@ -22,3 +22,12 @@ function goToTop() {
     behavior: "smooth",
   });
 }
+
+// Toggle menu mobile
+
+const mobileText = document.getElementById("mobile-text");
+const menuList = document.querySelector(".u-mobile");
+
+mobileText.addEventListener("click", function () {
+  menuList.classList.toggle("closed");
+});
